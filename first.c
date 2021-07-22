@@ -1,10 +1,20 @@
 #include<stdio.h>
+int max(int a, int b, int c)
+{
+	if(a>b && a>c)
+	return a;
+	else if(b>c)	
+	return b;
+	else
+	return c;
+}
 int main()
 {
-int a,b,sum;
-printf("Enter two numbers:\n");
-scanf("%d %d", &a,&b);
-sum=a+b;
-printf("Sum:%d \n",sum);
-return 0;
+	int x,y,z;
+	printf("Enter the values for x,y and z: \n");
+	scanf("%d%d%d\n" ,&x,&y,&z);
+	int m=max(x,y,z);
+	printf("%d\n",m);
+	return 0;
 }
+	
