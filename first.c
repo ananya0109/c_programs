@@ -8,6 +8,10 @@ int max(int a, int b, int c)
 	else
 	return c;
 }
+static void staticFunc(void)
+{
+  printf("static function call\n");
+}
 int main()
 {
 	int x,y,z;
@@ -15,6 +19,7 @@ int main()
 	scanf("%d%d%d\n" ,&x,&y,&z);
 	int m=max(x,y,z);
 	printf("%d\n",m);
+  staticFunc();
 	return 0;
 }
 	
